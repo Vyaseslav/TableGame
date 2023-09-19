@@ -82,8 +82,8 @@ private:
 public slots:
     void name1input(){name1 = getName(lineEditName1, nameButton1); if(name1 != nullptr && name2 != nullptr) startGame(startButton, name1, name2);};
     void name2input(){name2 = getName(lineEditName2, nameButton2); if(name1 != nullptr && name2 != nullptr) startGame(startButton, name1, name2);};
-    void makeRoll1(){currentPoint1 = randNum(rollLineEdit, rollButton1); if(currentPoint1 != 0 && currentPoint2 != 0) comparingNumbers(currentPoint1, currentPoint2, name1, name2, cTile1ref, cTile2ref);};
-    void makeRoll2(){currentPoint2 = randNum(rockLineEdit, rockButton2); if(currentPoint1 != 0 && currentPoint2 != 0) comparingNumbers(currentPoint1, currentPoint2, name1, name2, cTile1ref, cTile2ref);};
+    void makeRoll1(){currentPoint1 = randNum(rollLineEdit, rollButton1); if(currentPoint1 != 0 && currentPoint2 != 0){comparingNumbers(currentPoint1, currentPoint2, name1, name2, cTile1ref, cTile2ref);}};
+    void makeRoll2(){currentPoint2 = randNum(rockLineEdit, rockButton2); if(currentPoint1 != 0 && currentPoint2 != 0){comparingNumbers(currentPoint1, currentPoint2, name1, name2, cTile1ref, cTile2ref);}};
 };
 
 

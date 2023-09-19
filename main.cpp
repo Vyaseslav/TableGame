@@ -7,6 +7,10 @@ int main(int argc, char *argv[]) {
     GameMainWindow window(nullptr);
     Ui::MainWindow Game;
     Game.setupUi(&window);
+
+    window.rollButton1 = Game.pushButton_20;
+    window.rockButton2 = Game.pushButton_21;
+
     window.rollLineEdit = Game.lineEdit_2;
     window.rockLineEdit = Game.lineEdit_4;
     window.lineEditEquals = Game.lineEdit_3;
@@ -37,14 +41,14 @@ int main(int argc, char *argv[]) {
 
     window.menuMenu = Game.menuMenu;
     window.actionRestart = Game.actionRestart;
-
     window.fillArrayButtons();
-
 
     QObject::connect(window.actionRestart, &QAction::triggered,[&window](){
         window.restartGame();
     });
 
+    window.rollButton1->setDisabled(true);
+    window.rockButton2->setDisabled(true);
 
     window.show();
 
