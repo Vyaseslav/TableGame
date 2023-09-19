@@ -73,6 +73,14 @@ build CMakeFiles/GameTest.dir/gameMainWindow.cpp.obj: CXX_COMPILER__GameTest_Deb
   OBJECT_DIR = CMakeFiles\GameTest.dir
   OBJECT_FILE_DIR = CMakeFiles\GameTest.dir
 
+build CMakeFiles/GameTest.dir/saveLoader.cpp.obj: CXX_COMPILER__GameTest_Debug C$:/Users/slava/CLionProjects/GameTest/saveLoader.cpp || cmake_object_order_depends_target_GameTest
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles\GameTest.dir\saveLoader.cpp.obj.d
+  FLAGS = -static-libstdc++ -static-libgcc -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/slava/CLionProjects/GameTest/cmake-build-debug/GameTest_autogen/include -isystem C:/Qt/Qt5.12.12/5.12.12/mingw73_64/include -isystem C:/Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtCore -isystem C:/Qt/Qt5.12.12/5.12.12/mingw73_64/./mkspecs/win32-g++ -isystem C:/Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtGui -isystem C:/Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtANGLE -isystem C:/Qt/Qt5.12.12/5.12.12/mingw73_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\GameTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\GameTest.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GameTest
@@ -81,7 +89,7 @@ build CMakeFiles/GameTest.dir/gameMainWindow.cpp.obj: CXX_COMPILER__GameTest_Deb
 #############################################
 # Link the executable GameTest.exe
 
-build GameTest.exe: CXX_EXECUTABLE_LINKER__GameTest_Debug CMakeFiles/GameTest.dir/GameTest_autogen/mocs_compilation.cpp.obj CMakeFiles/GameTest.dir/main.cpp.obj CMakeFiles/GameTest.dir/gameMainWindow.cpp.obj | C$:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Widgetsd.a C$:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Guid.a C$:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Cored.a || GameTest_autogen
+build GameTest.exe: CXX_EXECUTABLE_LINKER__GameTest_Debug CMakeFiles/GameTest.dir/GameTest_autogen/mocs_compilation.cpp.obj CMakeFiles/GameTest.dir/main.cpp.obj CMakeFiles/GameTest.dir/gameMainWindow.cpp.obj CMakeFiles/GameTest.dir/saveLoader.cpp.obj | C$:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Widgetsd.a C$:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Guid.a C$:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Cored.a || GameTest_autogen
   FLAGS = -static-libstdc++ -static-libgcc -g
   LINK_LIBRARIES = C:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Widgetsd.a  C:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Guid.a  C:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/libQt5Cored.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\GameTest.dir

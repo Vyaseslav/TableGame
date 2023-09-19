@@ -28,6 +28,8 @@ class Ui_MainWindow
 {
 public:
     QAction *actionRestart;
+    QAction *actionSave;
+    QAction *actionLoad;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QGridLayout *gridLayout;
@@ -72,6 +74,10 @@ public:
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 212, 212);"));
         actionRestart = new QAction(MainWindow);
         actionRestart->setObjectName(QString::fromUtf8("actionRestart"));
+        actionSave = new QAction(MainWindow);
+        actionSave->setObjectName(QString::fromUtf8("actionSave"));
+        actionLoad = new QAction(MainWindow);
+        actionLoad->setObjectName(QString::fromUtf8("actionLoad"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -574,6 +580,8 @@ public:
 
         menubar->addAction(menuMenu->menuAction());
         menuMenu->addAction(actionRestart);
+        menuMenu->addAction(actionSave);
+        menuMenu->addAction(actionLoad);
 
         retranslateUi(MainWindow);
         QObject::connect(pushButton_22, SIGNAL(clicked()), MainWindow, SLOT(name1input()));
@@ -588,6 +596,8 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Rock & Roll Table Game", nullptr));
         actionRestart->setText(QApplication::translate("MainWindow", "Restart", nullptr));
+        actionSave->setText(QApplication::translate("MainWindow", "Save", nullptr));
+        actionLoad->setText(QApplication::translate("MainWindow", "Load", nullptr));
         pushButton_21->setText(QApplication::translate("MainWindow", "ROLL!", nullptr));
         lineEdit->setText(QString());
         lineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Input name", nullptr));

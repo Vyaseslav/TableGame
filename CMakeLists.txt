@@ -16,7 +16,7 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(GameTest main.cpp gameMainWindow.h gameMainWindow.cpp)
+add_executable(GameTest main.cpp gameMainWindow.h gameMainWindow.cpp saveLoader.h saveLoader.cpp)
 target_link_libraries(GameTest
         Qt5::Core
         Qt5::Gui

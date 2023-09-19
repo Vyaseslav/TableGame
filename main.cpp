@@ -1,12 +1,13 @@
 #include "./ui_Game.h"
 #include "gameMainWindow.h"
-
+#include "saveLoader.h"
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     GameMainWindow window(nullptr);
     Ui::MainWindow Game;
     Game.setupUi(&window);
+    SaveLoader saveLoader;
 
     window.rollButton1 = Game.pushButton_20;
     window.rockButton2 = Game.pushButton_21;
@@ -41,10 +42,23 @@ int main(int argc, char *argv[]) {
 
     window.menuMenu = Game.menuMenu;
     window.actionRestart = Game.actionRestart;
+    window.actionLoad = Game.actionLoad;
+    window.actionSave = Game.actionSave;
+
     window.fillArrayButtons();
 
     QObject::connect(window.actionRestart, &QAction::triggered,[&window](){
         window.restartGame();
+    });
+
+    QObject::connect(window.actionSave, &QAction::triggered, [&window, &saveLoader](){
+        saveLoader.fillFile(window.fillFileSave());
+        saveLoader.saveFile();
+    });
+
+    QObject::connect(window.actionLoad, &QAction::triggered,[&window, &saveLoader](){
+        saveLoader.loadFile();
+        window.loadGame(saveLoader.putFile());
     });
 
     window.rollButton1->setDisabled(true);
@@ -53,6 +67,9 @@ int main(int argc, char *argv[]) {
     window.show();
 
     cout << "n1=1:-1; n1=20:+2; n1>n2:n1+1." << endl;
+
+
+
 
     return QApplication::exec();
 }

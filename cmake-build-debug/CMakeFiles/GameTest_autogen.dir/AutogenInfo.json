@@ -81,6 +81,12 @@
 			"MU",
 			"EWIEGA46WW/moc_gameMainWindow.cpp",
 			null
+		],
+		[
+			"C:/Users/slava/CLionProjects/GameTest/saveLoader.h",
+			"MU",
+			"EWIEGA46WW/moc_saveLoader.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -140,7 +146,8 @@
 			"MU",
 			null
 		],
-		[ "C:/Users/slava/CLionProjects/GameTest/main.cpp", "MU", null ]
+		[ "C:/Users/slava/CLionProjects/GameTest/main.cpp", "MU", null ],
+		[ "C:/Users/slava/CLionProjects/GameTest/saveLoader.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

@@ -13,6 +13,7 @@
 #include "QMenuBar"
 #include "QStatusBar"
 #include "vector"
+#include <sstream>
 using namespace std;
 #include "iostream"
 
@@ -21,6 +22,8 @@ class GameMainWindow : public QMainWindow{
 
 public:
     QAction *actionRestart = nullptr;
+    QAction *actionSave = nullptr;
+    QAction *actionLoad = nullptr;
 
     QLineEdit* rollLineEdit = nullptr;
     QLineEdit* rockLineEdit = nullptr;
@@ -59,15 +62,17 @@ public:
     QMenu *menuMenu = nullptr;
     QStatusBar *statusbar = nullptr;
 
-
     void fillArrayButtons();
     void restartGame();
+    string fillFileSave();
+    void loadGame(string save);
     GameMainWindow(QWidget* parent = nullptr): QMainWindow(parent){}
 private:
     QString getName(QLineEdit* lineEdit, QPushButton* Button);
     int randNum(QLineEdit* lineEdit, QPushButton* Button);
     void comparingNumbers(int num1, int num2, QString name1, QString name2, int currentTile1, int currentTile2);
     void startGame(QPushButton* tile, QString name1, QString name2);
+
 
 
     QString name1 = nullptr;

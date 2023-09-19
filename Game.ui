@@ -1485,6 +1485,8 @@ background-color: rgb(217, 16, 80);</string>
      <string>Menu</string>
     </property>
     <addaction name="actionRestart"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionLoad"/>
    </widget>
    <addaction name="menuMenu"/>
   </widget>
@@ -1492,6 +1494,16 @@ background-color: rgb(217, 16, 80);</string>
   <action name="actionRestart">
    <property name="text">
     <string>Restart</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
    </property>
   </action>
  </widget>
