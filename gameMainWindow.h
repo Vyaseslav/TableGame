@@ -9,6 +9,9 @@
 #include "iostream"
 #include "QLineEdit"
 #include "QPushButton"
+#include "QMenu"
+#include "QMenuBar"
+#include "QStatusBar"
 #include "vector"
 using namespace std;
 #include "iostream"
@@ -17,6 +20,7 @@ class GameMainWindow : public QMainWindow{
     Q_OBJECT
 
 public:
+    QAction *actionRestart = nullptr;
 
     QLineEdit* rollLineEdit = nullptr;
     QLineEdit* rockLineEdit = nullptr;
@@ -51,18 +55,19 @@ public:
 
     vector<QPushButton*> arrayButtons;
 
-
-
+    QMenuBar *menubar = nullptr;
+    QMenu *menuMenu = nullptr;
+    QStatusBar *statusbar = nullptr;
 
 
     void fillArrayButtons();
+    void restartGame();
     GameMainWindow(QWidget* parent = nullptr): QMainWindow(parent){}
 private:
     QString getName(QLineEdit* lineEdit, QPushButton* Button);
     int randNum(QLineEdit* lineEdit, QPushButton* Button);
     void comparingNumbers(int num1, int num2, QString name1, QString name2, int currentTile1, int currentTile2);
     void startGame(QPushButton* tile, QString name1, QString name2);
-
 
 
     QString name1 = nullptr;
@@ -80,5 +85,7 @@ public slots:
     void makeRoll1(){currentPoint1 = randNum(rollLineEdit, rollButton1); if(currentPoint1 != 0 && currentPoint2 != 0) comparingNumbers(currentPoint1, currentPoint2, name1, name2, cTile1ref, cTile2ref);};
     void makeRoll2(){currentPoint2 = randNum(rockLineEdit, rockButton2); if(currentPoint1 != 0 && currentPoint2 != 0) comparingNumbers(currentPoint1, currentPoint2, name1, name2, cTile1ref, cTile2ref);};
 };
+
+
 
 #endif //GAMETEST_GAMEMAINWINDOW_H

@@ -2,6 +2,37 @@
 #include "ctime"
 using namespace std;
 
+void GameMainWindow::restartGame() {
+
+    lineEditEquals->setText(nullptr);
+    rockLineEdit->setText(nullptr);
+    rollLineEdit->setText(nullptr);
+
+    lineEditName1->setText(nullptr);
+    lineEditName2->setText(nullptr);
+    nameButton1->setDisabled(false);
+    nameButton1->setText("1P Ready");
+    nameButton1->setFlat(false);
+    lineEditName1->setReadOnly(false);
+    nameButton2->setDisabled(false);
+    nameButton2->setText("2P Ready");
+    nameButton2->setFlat(false);
+    lineEditName2->setReadOnly(false);
+
+    currentTile1 = 0;
+    currentTile2 = 0;
+
+    for (int i = 1; i < arrayButtons.size()-1; ++i) {
+        arrayButtons[i]->setText("\n" + QString::number(i) + "\n");
+    }
+    arrayButtons[0]->setText("\nStart!\n");
+    arrayButtons[18]->setText("\nFinish\n");
+    cout << "New game!\n";
+    cout << "n1=1:-1; n1=20:+2; n1>n2:n1+1." << endl;
+
+
+}
+
 void GameMainWindow::fillArrayButtons(){
     arrayButtons.resize(19);
     arrayButtons[0] = startButton;
@@ -23,6 +54,7 @@ void GameMainWindow::fillArrayButtons(){
     arrayButtons[16] = tileButton16;
     arrayButtons[17] = tileButton17;
     arrayButtons[18] = finishButton;
+
 }
 
 

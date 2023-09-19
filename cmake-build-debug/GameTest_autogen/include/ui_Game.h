@@ -10,10 +10,12 @@
 #define UI_GAME_H
 
 #include <QtCore/QVariant>
+#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
@@ -25,6 +27,7 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
+    QAction *actionRestart;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout;
     QGridLayout *gridLayout;
@@ -58,6 +61,7 @@ public:
     QPushButton *pushButton_18;
     QPushButton *pushButton_19;
     QMenuBar *menubar;
+    QMenu *menuMenu;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -65,6 +69,8 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->resize(755, 517);
+        actionRestart = new QAction(MainWindow);
+        actionRestart->setObjectName(QString::fromUtf8("actionRestart"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         verticalLayout = new QVBoxLayout(centralwidget);
@@ -371,10 +377,15 @@ public:
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
         menubar->setGeometry(QRect(0, 0, 755, 26));
+        menuMenu = new QMenu(menubar);
+        menuMenu->setObjectName(QString::fromUtf8("menuMenu"));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
+
+        menubar->addAction(menuMenu->menuAction());
+        menuMenu->addAction(actionRestart);
 
         retranslateUi(MainWindow);
         QObject::connect(pushButton_22, SIGNAL(clicked()), MainWindow, SLOT(name1input()));
@@ -387,7 +398,8 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Rock & Roll Table Game", nullptr));
+        actionRestart->setText(QApplication::translate("MainWindow", "Restart", nullptr));
         pushButton_21->setText(QApplication::translate("MainWindow", "ROLL!", nullptr));
         lineEdit->setText(QString());
         lineEdit->setPlaceholderText(QApplication::translate("MainWindow", "Input name", nullptr));
@@ -415,6 +427,7 @@ public:
         pushButton_17->setText(QApplication::translate("MainWindow", "16", nullptr));
         pushButton_18->setText(QApplication::translate("MainWindow", "17", nullptr));
         pushButton_19->setText(QApplication::translate("MainWindow", "Finish!", nullptr));
+        menuMenu->setTitle(QApplication::translate("MainWindow", "Menu", nullptr));
     } // retranslateUi
 
 };

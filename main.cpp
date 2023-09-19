@@ -1,6 +1,7 @@
 #include "./ui_Game.h"
 #include "gameMainWindow.h"
 
+
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     GameMainWindow window(nullptr);
@@ -14,7 +15,6 @@ int main(int argc, char *argv[]) {
     window.nameButton1 = Game.pushButton_22;
     window.nameButton2 = Game.pushButton_23;
     window.startButton = Game.pushButton;
-
 
     window.tileButton1 = Game.pushButton_2;
     window.tileButton2 = Game.pushButton_3;
@@ -35,7 +35,16 @@ int main(int argc, char *argv[]) {
     window.tileButton17 = Game.pushButton_18;
     window.finishButton = Game.pushButton_19;
 
+    window.menuMenu = Game.menuMenu;
+    window.actionRestart = Game.actionRestart;
+
     window.fillArrayButtons();
+
+
+    QObject::connect(window.actionRestart, &QAction::triggered,[&window](){
+        window.restartGame();
+    });
+
 
     window.show();
 
