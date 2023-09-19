@@ -34,8 +34,6 @@ void GameMainWindow::restartGame() {
     cout << "n1=1:-1; n1=20:+2; n1>n2:n1+1." << endl;
     rollButton1->setDisabled(true);
     rockButton2->setDisabled(true);
-
-
 }
 
 void GameMainWindow::fillArrayButtons(){
@@ -59,7 +57,6 @@ void GameMainWindow::fillArrayButtons(){
     arrayButtons[16] = tileButton16;
     arrayButtons[17] = tileButton17;
     arrayButtons[18] = finishButton;
-
 }
 
 
@@ -98,9 +95,6 @@ void GameMainWindow::comparingNumbers(int num1, int num2, QString name1, QString
     //currentTile1++;
     //cTile2ref++;
     //currentTile2++;
-
-
-
     rollButton1->setDisabled(false);
     rockButton2->setDisabled(false);
 

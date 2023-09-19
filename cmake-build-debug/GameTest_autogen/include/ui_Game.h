@@ -68,8 +68,8 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(755, 513);
-        MainWindow->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(217, 217, 217, 255), stop:1 rgba(41, 41, 41, 255));"));
+        MainWindow->resize(1787, 782);
+        MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(212, 212, 212);"));
         actionRestart = new QAction(MainWindow);
         actionRestart->setObjectName(QString::fromUtf8("actionRestart"));
         centralwidget = new QWidget(MainWindow);
@@ -90,7 +90,7 @@ public:
         font.setPointSize(10);
         pushButton_21->setFont(font);
         pushButton_21->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(0, 0, 0, 255));"));
+"background-color: rgb(85, 85, 255);"));
 
         gridLayout->addWidget(pushButton_21, 2, 3, 1, 1);
 
@@ -102,32 +102,57 @@ public:
         sizePolicy1.setHeightForWidth(lineEdit->sizePolicy().hasHeightForWidth());
         lineEdit->setSizePolicy(sizePolicy1);
         QPalette palette;
-        QBrush brush(QColor(255, 255, 255, 255));
+        QBrush brush(QColor(0, 0, 0, 255));
         brush.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Button, brush);
-        palette.setBrush(QPalette::Active, QPalette::Base, brush);
-        palette.setBrush(QPalette::Active, QPalette::Window, brush);
-        QBrush brush1(QColor(0, 0, 0, 255));
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        QBrush brush1(QColor(255, 255, 255, 255));
         brush1.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Highlight, brush1);
-        palette.setBrush(QPalette::Active, QPalette::HighlightedText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Button, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Base, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Window, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Highlight, brush1);
-        palette.setBrush(QPalette::Inactive, QPalette::HighlightedText, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::Button, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::Base, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::Window, brush);
-        QBrush brush2(QColor(0, 120, 215, 255));
-        brush2.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Disabled, QPalette::Highlight, brush2);
-        palette.setBrush(QPalette::Disabled, QPalette::HighlightedText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Highlight, brush);
+        palette.setBrush(QPalette::Active, QPalette::HighlightedText, brush1);
+        QBrush brush2(QColor(0, 0, 0, 128));
+        brush2.setStyle(Qt::NoBrush);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette::Active, QPalette::PlaceholderText, brush2);
+#endif
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Highlight, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::HighlightedText, brush1);
+        QBrush brush3(QColor(0, 0, 0, 128));
+        brush3.setStyle(Qt::NoBrush);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush3);
+#endif
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Text, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        QBrush brush4(QColor(0, 120, 215, 255));
+        brush4.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Disabled, QPalette::Highlight, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::HighlightedText, brush1);
+        QBrush brush5(QColor(0, 0, 0, 128));
+        brush5.setStyle(Qt::NoBrush);
+#if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
+        palette.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush5);
+#endif
         lineEdit->setPalette(palette);
         QFont font1;
         font1.setPointSize(12);
         lineEdit->setFont(font1);
-        lineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        lineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);"));
         lineEdit->setMaxLength(7);
         lineEdit->setFrame(false);
         lineEdit->setEchoMode(QLineEdit::Normal);
@@ -143,7 +168,7 @@ public:
         pushButton_20->setMinimumSize(QSize(75, 75));
         pushButton_20->setFont(font);
         pushButton_20->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(0, 0, 0, 255));"));
+"background-color: rgb(85, 85, 255);"));
 
         gridLayout->addWidget(pushButton_20, 2, 1, 1, 1);
 
@@ -160,10 +185,10 @@ public:
         palette1.setBrush(QPalette::Active, QPalette::Window, brush1);
         palette1.setBrush(QPalette::Active, QPalette::Highlight, brush);
         palette1.setBrush(QPalette::Active, QPalette::HighlightedText, brush1);
-        QBrush brush3(QColor(255, 255, 255, 128));
-        brush3.setStyle(Qt::NoBrush);
+        QBrush brush6(QColor(0, 0, 0, 128));
+        brush6.setStyle(Qt::NoBrush);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette::Active, QPalette::PlaceholderText, brush3);
+        palette1.setBrush(QPalette::Active, QPalette::PlaceholderText, brush6);
 #endif
         palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
         palette1.setBrush(QPalette::Inactive, QPalette::Button, brush1);
@@ -173,10 +198,10 @@ public:
         palette1.setBrush(QPalette::Inactive, QPalette::Window, brush1);
         palette1.setBrush(QPalette::Inactive, QPalette::Highlight, brush);
         palette1.setBrush(QPalette::Inactive, QPalette::HighlightedText, brush1);
-        QBrush brush4(QColor(255, 255, 255, 128));
-        brush4.setStyle(Qt::NoBrush);
+        QBrush brush7(QColor(0, 0, 0, 128));
+        brush7.setStyle(Qt::NoBrush);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush4);
+        palette1.setBrush(QPalette::Inactive, QPalette::PlaceholderText, brush7);
 #endif
         palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush);
         palette1.setBrush(QPalette::Disabled, QPalette::Button, brush1);
@@ -184,17 +209,18 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::ButtonText, brush);
         palette1.setBrush(QPalette::Disabled, QPalette::Base, brush1);
         palette1.setBrush(QPalette::Disabled, QPalette::Window, brush1);
-        palette1.setBrush(QPalette::Disabled, QPalette::Highlight, brush2);
+        palette1.setBrush(QPalette::Disabled, QPalette::Highlight, brush4);
         palette1.setBrush(QPalette::Disabled, QPalette::HighlightedText, brush1);
-        QBrush brush5(QColor(255, 255, 255, 128));
-        brush5.setStyle(Qt::NoBrush);
+        QBrush brush8(QColor(0, 0, 0, 128));
+        brush8.setStyle(Qt::NoBrush);
 #if QT_VERSION >= QT_VERSION_CHECK(5, 12, 0)
-        palette1.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush5);
+        palette1.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush8);
 #endif
         lineEdit_5->setPalette(palette1);
         lineEdit_5->setFont(font1);
-        lineEdit_5->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);\n"
-"color: rgb(255, 255, 255);"));
+        lineEdit_5->setFocusPolicy(Qt::StrongFocus);
+        lineEdit_5->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);"));
         lineEdit_5->setMaxLength(7);
         lineEdit_5->setFrame(false);
         lineEdit_5->setAlignment(Qt::AlignCenter);
@@ -224,8 +250,8 @@ public:
         sizePolicy3.setHeightForWidth(pushButton_23->sizePolicy().hasHeightForWidth());
         pushButton_23->setSizePolicy(sizePolicy3);
         pushButton_23->setFont(font);
-        pushButton_23->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"background-color: rgb(0, 0, 0);"));
+        pushButton_23->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
+"background-color: rgb(255, 255, 255);"));
 
         gridLayout->addWidget(pushButton_23, 1, 4, 1, 1);
 
@@ -238,7 +264,7 @@ public:
         lineEdit_2->setSizePolicy(sizePolicy4);
         lineEdit_2->setMinimumSize(QSize(0, 75));
         lineEdit_2->setFont(font1);
-        lineEdit_2->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(124, 124, 124, 255), stop:1 rgba(255, 255, 255, 255));"));
+        lineEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         lineEdit_2->setFrame(false);
         lineEdit_2->setAlignment(Qt::AlignCenter);
         lineEdit_2->setReadOnly(true);
@@ -251,7 +277,8 @@ public:
         lineEdit_3->setSizePolicy(sizePolicy4);
         lineEdit_3->setMinimumSize(QSize(0, 75));
         lineEdit_3->setFont(font1);
-        lineEdit_3->setStyleSheet(QString::fromUtf8("background-color: rgb(140, 140, 140);"));
+        lineEdit_3->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
+"background-color: rgb(255, 255, 255);"));
         lineEdit_3->setFrame(false);
         lineEdit_3->setAlignment(Qt::AlignCenter);
         lineEdit_3->setReadOnly(true);
@@ -264,8 +291,8 @@ public:
         lineEdit_4->setSizePolicy(sizePolicy4);
         lineEdit_4->setMinimumSize(QSize(0, 75));
         lineEdit_4->setFont(font1);
-        lineEdit_4->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(130, 130, 130, 255), stop:1 rgba(0, 0, 0, 255));\n"
-"color: rgb(255, 255, 255);"));
+        lineEdit_4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"color: rgb(0, 0, 0);"));
         lineEdit_4->setFrame(false);
         lineEdit_4->setAlignment(Qt::AlignCenter);
         lineEdit_4->setReadOnly(true);
@@ -285,7 +312,7 @@ public:
         pushButton_16->setFont(font);
         pushButton_16->setAutoFillBackground(false);
         pushButton_16->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_16->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_16, 0, 7, 1, 1);
@@ -298,7 +325,7 @@ public:
         pushButton_7->setFont(font);
         pushButton_7->setAutoFillBackground(false);
         pushButton_7->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_7->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_7, 0, 2, 1, 1);
@@ -316,7 +343,7 @@ public:
         pushButton_2->setFont(font2);
         pushButton_2->setAutoFillBackground(false);
         pushButton_2->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_2->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_2, 1, 0, 1, 1);
@@ -329,9 +356,7 @@ public:
         pushButton_3->setFont(font);
         pushButton_3->setAutoFillBackground(false);
         pushButton_3->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"\n"
-""));
+"background-color: rgb(255, 255, 255);"));
         pushButton_3->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_3, 2, 0, 1, 1);
@@ -344,7 +369,7 @@ public:
         pushButton_6->setFont(font);
         pushButton_6->setAutoFillBackground(false);
         pushButton_6->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_6->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_6, 1, 2, 1, 1);
@@ -370,7 +395,7 @@ public:
         pushButton_10->setFont(font);
         pushButton_10->setAutoFillBackground(false);
         pushButton_10->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_10->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_10, 1, 4, 1, 1);
@@ -383,7 +408,7 @@ public:
         pushButton_13->setFont(font);
         pushButton_13->setAutoFillBackground(false);
         pushButton_13->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_13->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_13, 2, 6, 1, 1);
@@ -396,8 +421,7 @@ public:
         pushButton_15->setFont(font);
         pushButton_15->setAutoFillBackground(false);
         pushButton_15->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));\n"
-""));
+"background-color: rgb(255, 255, 255);"));
         pushButton_15->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_15, 0, 6, 1, 1);
@@ -410,7 +434,7 @@ public:
         pushButton_5->setFont(font);
         pushButton_5->setAutoFillBackground(false);
         pushButton_5->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_5->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_5, 2, 2, 1, 1);
@@ -423,7 +447,7 @@ public:
         pushButton_9->setFont(font);
         pushButton_9->setAutoFillBackground(false);
         pushButton_9->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"background-color: rgb(255, 255, 255);\n"
 ""));
         pushButton_9->setAutoRepeat(false);
 
@@ -437,7 +461,7 @@ public:
         pushButton_4->setFont(font);
         pushButton_4->setAutoFillBackground(false);
         pushButton_4->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_4->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_4, 2, 1, 1, 1);
@@ -450,7 +474,7 @@ public:
         pushButton_8->setFont(font);
         pushButton_8->setAutoFillBackground(false);
         pushButton_8->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_8->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_8, 0, 3, 1, 1);
@@ -463,8 +487,7 @@ public:
         pushButton_14->setFont(font);
         pushButton_14->setAutoFillBackground(false);
         pushButton_14->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));\n"
-""));
+"background-color: rgb(255, 255, 255);"));
         pushButton_14->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_14, 1, 6, 1, 1);
@@ -477,7 +500,7 @@ public:
         pushButton_11->setFont(font);
         pushButton_11->setAutoFillBackground(false);
         pushButton_11->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_11->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_11, 2, 4, 1, 1);
@@ -490,7 +513,7 @@ public:
         pushButton_12->setFont(font);
         pushButton_12->setAutoFillBackground(false);
         pushButton_12->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_12->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_12, 2, 5, 1, 1);
@@ -503,8 +526,7 @@ public:
         pushButton_17->setFont(font);
         pushButton_17->setAutoFillBackground(false);
         pushButton_17->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));\n"
-""));
+"background-color: rgb(255, 255, 255);"));
         pushButton_17->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_17, 0, 8, 1, 1);
@@ -517,7 +539,7 @@ public:
         pushButton_18->setFont(font);
         pushButton_18->setAutoFillBackground(false);
         pushButton_18->setStyleSheet(QString::fromUtf8("color: rgb(85, 85, 255);\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:1, stop:0 rgba(106, 99, 128, 255), stop:1 rgba(255, 255, 255, 255));"));
+"background-color: rgb(255, 255, 255);"));
         pushButton_18->setAutoRepeat(false);
 
         gridLayout_2->addWidget(pushButton_18, 1, 8, 1, 1);
@@ -541,7 +563,8 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 755, 26));
+        menubar->setGeometry(QRect(0, 0, 1787, 34));
+        menubar->setFont(font1);
         menuMenu = new QMenu(menubar);
         menuMenu->setObjectName(QString::fromUtf8("menuMenu"));
         MainWindow->setMenuBar(menubar);
