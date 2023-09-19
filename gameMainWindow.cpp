@@ -3,25 +3,36 @@
 using namespace std;
 
 string GameMainWindow::fillFileSave(){
-    return name1.toStdString() + " " + name2.toStdString() + " " + to_string(currentPoint1) + " " + to_string(currentPoint2) + " " + to_string(currentTile1) + " " + to_string(currentTile2);
+        return name1.toStdString() + " " + name2.toStdString() + " " + to_string(currentPoint1) + " " + to_string(currentPoint2) + " " + to_string(currentTile1) + " " + to_string(currentTile2);
 }
 
 void GameMainWindow::loadGame(string save) {
+
+
     std::istringstream iss(save);
     std::vector<std::string> words;
     std::string word;
     while (iss >> word) {
         words.push_back(word);
     }
-    name1 = QString::fromStdString(words[0]);
-    name2 = QString::fromStdString(words[1]);
-    currentPoint1 = std::stoi(words[2]);
-    currentPoint2 = std::stoi(words[3]);
-    currentTile1 = std::stoi(words[4]);
-    currentTile2 = std::stoi(words[5]);
-    lineEditName1->setText(name1);
-    lineEditName2->setText(name2);
-    words.clear();
+
+        nameButton1->setText("");
+        nameButton1->setFlat(true);
+        nameButton1->setDisabled(true);
+        nameButton2->setText("");
+        nameButton2->setFlat(true);
+        nameButton2->setDisabled(true);
+
+        name1 = QString::fromStdString(words[0]);
+        name2 = QString::fromStdString(words[1]);
+        currentPoint1 = std::stoi(words[2]);
+        currentPoint2 = std::stoi(words[3]);
+        currentTile1 = std::stoi(words[4]);
+        currentTile2 = std::stoi(words[5]);
+        lineEditName1->setText(name1);
+        lineEditName2->setText(name2);
+        words.clear();
+
     comparingNumbers(currentPoint1, currentPoint2, name1, name2, cTile1ref, cTile2ref);
 }
 

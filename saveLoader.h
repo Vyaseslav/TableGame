@@ -26,7 +26,7 @@ public :
     string putFile();
 
 private:
-    string fileSave = "0 0 0 0 name1 name2";
+    string fileSave = "name1 name2 0 0 0 0";
 };
 
 

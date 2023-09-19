@@ -13,9 +13,9 @@ void SaveLoader::saveFile() {
     if (file.is_open()) {
         file << fileSave;
         file.close();
-        //std::cout << "Yes " << std::endl;
+        std::cout << "Yes " << std::endl;
     } else {
-        //std::cerr << "No " << std::endl;
+        std::cerr << "No " << std::endl;
     }
 }
 
@@ -25,9 +25,9 @@ void SaveLoader::loadFile() {
     if (file.is_open()) {
         std::getline(file, str);
         file.close();
-        //std::cout << "Yes " << std::endl;
+        std::cout << "Yes " << std::endl;
     } else {
-        //std::cerr << "No " << std::endl;
+        std::cerr << "No " << std::endl;
     }
     fileSave = str;
 }
