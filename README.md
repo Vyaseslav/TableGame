@@ -1,11 +1,12 @@
 
 # TableGame
+Для сборки нужно использовать MINGW
 
 Как собрать проект - скрипт:
 
 собрать проект - скрипт:
 
-Для сборки проекта нужен !MINGW! Cmake: cmake_minimum_required(VERSION 3.25)
+Для сборки проекта нужен Cmake: cmake_minimum_required(VERSION 3.25)
 
 Скачать сам проект
 
