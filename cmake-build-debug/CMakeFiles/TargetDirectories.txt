@@ -1,0 +1,4 @@
+C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/GameTest.dir
+C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/GameTest_autogen.dir
