@@ -39,5 +39,6 @@
 В этом же каталоге вводим: Cmake --build . (или полный путь к Cmake.exe --build .)
 
 Gameplay:
+n1=1:-1; n1=20:+2; n1>n2:n1+1.
 
 ![GameTableGif](https://github.com/Vyaseslav/TableGame/assets/79661069/9b377eaf-af5c-4c72-9021-6b326fc1b627)
