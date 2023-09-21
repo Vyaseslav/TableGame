@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
-project(GameTest)
+project(TableGame)
 
-set(CMAKE_CXX_STANDARD 17)
+set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++ -static-libgcc")
 
 set(CMAKE_AUTOMOC ON)
@@ -16,8 +16,8 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(GameTest main.cpp gameMainWindow.h gameMainWindow.cpp saveLoader.h saveLoader.cpp)
-target_link_libraries(GameTest
+add_executable(TableGame main.cpp gameMainWindow.h gameMainWindow.cpp saveLoader.h saveLoader.cpp Game.ui)
+target_link_libraries(TableGame
         Qt5::Core
         Qt5::Gui
         Qt5::Widgets

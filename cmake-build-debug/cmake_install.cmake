@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/slava/CLionProjects/GameTest
+# Install script for directory: C:/Github/TableGame
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Github/TableGame/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

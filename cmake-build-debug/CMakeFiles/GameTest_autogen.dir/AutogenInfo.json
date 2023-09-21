@@ -1,15 +1,15 @@
 {
-	"BUILD_DIR" : "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/GameTest_autogen",
-	"CMAKE_BINARY_DIR" : "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/slava/CLionProjects/GameTest",
+	"BUILD_DIR" : "C:/Github/TableGame/cmake-build-debug/GameTest_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Github/TableGame/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Github/TableGame/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Github/TableGame",
 	"CMAKE_EXECUTABLE" : "C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"C:/Users/slava/CLionProjects/GameTest/CMakeLists.txt",
+		"C:/Github/TableGame/CMakeLists.txt",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystem.cmake.in",
-		"C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/3.25.2/CMakeSystem.cmake",
+		"C:/Github/TableGame/cmake-build-debug/CMakeFiles/3.25.2/CMakeSystem.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake",
@@ -60,7 +60,7 @@
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in",
-		"C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake",
+		"C:/Github/TableGame/cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-Determine-CXX.cmake",
@@ -109,7 +109,7 @@
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in",
-		"C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake",
+		"C:/Github/TableGame/cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake",
@@ -124,7 +124,7 @@
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineRCCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCCompiler.cmake.in",
-		"C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/3.25.2/CMakeRCCompiler.cmake",
+		"C:/Github/TableGame/cmake-build-debug/CMakeFiles/3.25.2/CMakeRCCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeRCInformation.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-windres.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeTestRCCompiler.cmake",
@@ -140,7 +140,7 @@
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in",
-		"C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake",
+		"C:/Github/TableGame/cmake-build-debug/CMakeFiles/3.25.2/CMakeCCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-C-ABI.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake",
@@ -160,7 +160,7 @@
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in",
-		"C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake",
+		"C:/Github/TableGame/cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
 		"C:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"C:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/cmake/Qt5/Qt5Config.cmake",
@@ -197,27 +197,27 @@
 		"C:/Qt/Qt5.12.12/5.12.12/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeParseArguments.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "C:/Users/slava/CLionProjects/GameTest",
+	"CMAKE_SOURCE_DIR" : "C:/Github/TableGame",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/slava/CLionProjects/GameTest/gameMainWindow.h",
+			"C:/Github/TableGame/gameMainWindow.h",
 			"MU",
 			"EWIEGA46WW/moc_gameMainWindow.cpp",
 			null
 		],
 		[
-			"C:/Users/slava/CLionProjects/GameTest/saveLoader.h",
+			"C:/Github/TableGame/saveLoader.h",
 			"MU",
 			"EWIEGA46WW/moc_saveLoader.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/GameTest_autogen/include",
-	"MOC_COMPILATION_FILE" : "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/GameTest_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "C:/Github/TableGame/cmake-build-debug/GameTest_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Github/TableGame/cmake-build-debug/GameTest_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -254,26 +254,22 @@
 		"-c",
 		"C:/Program Files/JetBrains/CLion 2023.1.4/bin/cmake/win/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/GameTest_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "C:/Github/TableGame/cmake-build-debug/GameTest_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/GameTest_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "C:/Github/TableGame/cmake-build-debug/CMakeFiles/GameTest_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/Qt5.12.12/5.12.12/mingw73_64/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/Qt5.12.12/5.12.12/mingw73_64/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 12,
-	"SETTINGS_FILE" : "C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/GameTest_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "C:/Github/TableGame/cmake-build-debug/CMakeFiles/GameTest_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"C:/Users/slava/CLionProjects/GameTest/gameMainWindow.cpp",
-			"MU",
-			null
-		],
-		[ "C:/Users/slava/CLionProjects/GameTest/main.cpp", "MU", null ],
-		[ "C:/Users/slava/CLionProjects/GameTest/saveLoader.cpp", "MU", null ]
+		[ "C:/Github/TableGame/gameMainWindow.cpp", "MU", null ],
+		[ "C:/Github/TableGame/main.cpp", "MU", null ],
+		[ "C:/Github/TableGame/saveLoader.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

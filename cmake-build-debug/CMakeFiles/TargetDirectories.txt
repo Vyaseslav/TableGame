@@ -1,4 +1,4 @@
-C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/GameTest.dir
-C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/slava/CLionProjects/GameTest/cmake-build-debug/CMakeFiles/GameTest_autogen.dir
+C:/Github/TableGame/cmake-build-debug/CMakeFiles/TableGame.dir
+C:/Github/TableGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Github/TableGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Github/TableGame/cmake-build-debug/CMakeFiles/TableGame_autogen.dir
